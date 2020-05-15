@@ -23,5 +23,5 @@ def parser_by_field(data, data_type_in_dict='entry_type', identifier_name='id'):
     ret = get_values_from_data(data, identifier_name)
     result = ''
     for item in ret:
-        result += '@' + data[data_type_in_dict] + '{' + item + '}\n'
+        result += '@' + item[data_type_in_dict] + '{' + item + '}\n'
     return result
